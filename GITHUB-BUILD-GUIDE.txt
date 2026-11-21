@@ -1,0 +1,16 @@
+HADO AirQo Android - GitHub Actions build
+
+1. Create a GitHub repository. Private is recommended.
+2. Extract this ZIP on your computer.
+3. Open the extracted hado-airqo-android-updated folder.
+4. Upload the CONTENTS of that folder to the root of your GitHub repository (not the outer folder itself). Include the hidden .github folder and its workflows/build-android-apk.yml file.
+5. In the repository, open Settings > Actions > General. Ensure Actions are allowed. Save if you change anything.
+6. Open the Actions tab. Select 'Build HADO AirQo Android APK' in the left panel.
+7. Click 'Run workflow', select main, and click the green Run workflow button.
+8. Wait for the run to finish. Open the completed run and find Artifacts near the bottom.
+9. Download HADO-AirQo-debug-APK.zip and extract it. It contains app-debug.apk.
+10. Transfer app-debug.apk to your Android phone and install it. You may need to allow your file manager to install unknown apps.
+
+If the workflow fails, open the failed job and copy the first actual error from the build log. Do not share AirQo secrets, WordPress passwords, or Application Passwords in GitHub source files or screenshots.
+
+This workflow builds a debug APK. It is for testing/internal installation, not a Play Store release-signed build.
